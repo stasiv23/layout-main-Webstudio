@@ -1,18 +1,383 @@
-/* colors */
 :root{
-    --accent-color:#2196F3;
-    --main-color:#212121;
-    --background-color:#757575;
-    --second-color:#2F303A;
-    --section-color:#F5F4FA ;
-    }
-    /* font */
-    font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-.container{
-    width: 1170px;
-    margin: 0 auto;
+    /* colors */
+    --color-blue: #2196F3;
+    --color-black: #212121;
+    --color-gray: #2F303A;
+    --color-gray-for-text-and-nav-tel: #757575;                                                                                                                             
+    --color-for-contacts: rgba(255, 255, 255, 0.60);
+    --color-for-fotocart-background: #F5F4FA;
+    --color-white: #FFF;
+    
 }
+
+*{ 
+
+    /* ================prohibition of allocation================  */
+
+
+   /* Cross brouser  */
+    user-select: none;
+
+    /* Internet Explorer  */
+    -ms-user-select: none;
+
+    /* Chrome, Safari  */
+    -webkit-user-select: none;
+
+    /* Firefox  */
+    -moz-user-select: none;
+}
+
+
+/* Початок стилізації */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /* white-space: no-wrap; */
+    margin: 0;
+    padding: 0;
+}
+.main_logo{ 
+ font-family: 'Raleway', sans-serif;
+ font-size: 26px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ letter-spacing: 0.78px;
+}
+a{ 
+    text-decoration: none;
+}
+.logo{ 
+    color: var(--color-blue);
+}
+.logo{ 
+    color: var(--color-blue);
+}
+ul{ 
+    text-decoration: none;
+    list-style-type: none;
+}
+.a_contacts:hover{ 
+    color: var(--color-blue);
+}
+nav > ul{ 
+    list-style-type: none;
+}
+a:link{
+    color: var(--color-black);
+}
+a:visited{ 
+    color: var(--color-black);
+}
+.active{ 
+    color: var(--color-blue); 
+}
+.mail{ 
+    color: #757575;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+.mail:hover{ 
+    color: var(--color-blue);
+}
+.main_h1{ 
+    color: var(--color-white);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px; 
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    background-color: var(--color-gray);
+}
+button{ 
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+    letter-spacing: 0.96px;
+    background-color: var(--color-blue);
+    border: 0px;
+    border-radius: 3%;
+}
+.main-button:hover{ 
+    box-shadow: black 1px;
+    transition: 0.3s;
+    transform: translateY(10px) scale(1);
+}
+.main-button:not(:hover){ 
+    transition: 0.5s;
+}
+.article-about{ 
+    color: var(--color-black);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.article{ 
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.42px;
+}
+.articles{ 
+    list-style-type: none;
+}
+.h2-about-us{ 
+    color: var(--color-black);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+.list-photodiary{ 
+    list-style-type: none;
+}
+.name{ 
+    color: var(--color-black);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.who-is{ 
+    color: #757575;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+footer{ 
+    background-color: var(--color-gray);
+    color: var(--color-white);
+}
+.studio{ 
+    color: var(--color-white);
+}
+address{ 
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.42px;
+}
+.container{ 
+    width: 1170px;
+    /* border: red 1px solid; */
+    margin: 0 auto;
+    padding: 15px;
+ }
+
+.fotos > li > h3{ 
+    color: #212121;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; 
+    letter-spacing: 1.08px;
+}
+.fotos > li > p{ 
+    color: #757575;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: 0.48px;
+}
+.buttons > ul > button > a{ 
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    letter-spacing: 0.48px;
+}
+.article-container, .about-container, .main-container, .footer-container{ 
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+/* .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.main_logo {
+    margin-right: 93px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.pages {
+    display: flex;
+    margin-right: 334px; 
+}
+
+.contacts {
+    display: flex;
+}
+.main_h1{ 
+    display: flex;
+    justify-content: center;
+}
+.nav-menu-items{ 
+   display: flex;
+   margin-right: 50px;
+}
+.nav-menu-items-cont{ 
+    margin-left: 334px;
+} */
+
+.main_h1{ 
+    text-align: center;
+}
+.button-div{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+.main-button{ 
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+}
+.gray-backround{
+    background-color: var(--color-gray);
+}
+.articles{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.h2-about-us{ 
+    text-align: center;
+}
+.list-photodiary{ 
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.our-team{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.name, .who-is{ 
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{ 
+    display: flex;
+    flex-direction: column;
+} 
+
+.pages { 
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+}
+
+
+
+
+.buttons{
+    text-align: center; 
+}
+  
+.buttons ul{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.buttons li{
+    display: inline-block;
+    margin-right: 8px; 
+}
+.buttons button{
+    padding: 8px 16px; 
+}
+.photodiary .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+.photodiary .fotos li {
+    margin: 10px;
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+}
+.photodiary .fotos img {
+    max-width: 100%;
+    height: auto;
+}
+.photodiary .fotos h3,
+.photodiary .fotos p {
+    margin: 4px 0;
+}
+.backround{ 
+    background-color: var(--color-for-fotocart-background);
+}
+.header-container{ 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pages, .contacts{ 
+    display: flex;
+}
+.nav-menu-items{ 
+    gap: 50px;
+}
+.nav-menu-items-cont{ 
+    gap: 50px;
+}
+.list-photodiary{ 
+    gap: 20px;
+}
+.btn-hover:hover{ 
+    box-shadow: black 5px;
+    transition: 0.3s;
+    transform: translateY(10px) scale(1);
+}
+.btn-hover:not(:hover){ 
+    transition: 0.5s;
+}
+
 
 
